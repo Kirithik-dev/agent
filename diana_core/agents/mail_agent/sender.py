@@ -5,8 +5,8 @@ import smtplib
 from email.mime.text import MIMEText
 from email.utils import parseaddr
 
-import config
-from imap_client import EmailMessage
+from . import config
+from .imap_client import EmailMessage
 
 
 def send_reply(original: EmailMessage, reply_body: str) -> None:

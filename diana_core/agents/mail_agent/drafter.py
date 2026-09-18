@@ -2,8 +2,8 @@
 Drafts a reply to an email using the local LLM, based on what the
 user says they want to say.
 """
-import brain
-from imap_client import EmailMessage
+from . import brain
+from .imap_client import EmailMessage
 
 SYSTEM_PROMPT = (
     "You are Diana's mail-drafting subsystem. Write a professional, concise "

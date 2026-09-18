@@ -5,7 +5,7 @@ so swapping models or adding streaming later only touches this file.
 """
 import requests
 
-import config
+from . import config
 
 
 def ask(prompt: str, system: str = "") -> str:

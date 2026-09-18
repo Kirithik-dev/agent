@@ -1,8 +1,8 @@
 """
 Summarizes emails using the local LLM.
 """
-import brain
-from imap_client import EmailMessage
+from . import brain
+from .imap_client import EmailMessage
 
 SYSTEM_PROMPT = (
     "You are Diana's mail-summarizing subsystem. Given an email, produce a "

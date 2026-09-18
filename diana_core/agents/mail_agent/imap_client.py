@@ -8,7 +8,7 @@ import imaplib
 from dataclasses import dataclass
 from email.header import decode_header
 
-import config
+from . import config
 
 
 @dataclass
